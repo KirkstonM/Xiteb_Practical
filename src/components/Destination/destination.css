@@ -1,0 +1,214 @@
+.drop-down-body button {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    padding: 1rem 0;
+    border: 2px solid var(--textcolor-secondary);
+    color: var(--textcolor-primary);
+    font-family: Comic Sans Ms;
+    font-style: italic;
+}
+
+.select-menu {
+    margin: 0 auto;
+    width: 30%;
+    visibility: hidden;
+    background: var(--background-primary);
+    color: var(--textcolor-primary);
+    font-family: Comic Sans Ms;
+    font-style: italic;
+}
+
+.select-menu.drop {
+    visibility: visible;
+}
+
+.select-menu ul {
+    list-style-type: none;
+    border: 1px solid rgb(66, 66, 66);
+    height: 10rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.select-menu ul li {
+    padding: 0.8rem;
+    margin-left: -30px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+}
+
+.destination-image-section {
+    position: relative;
+}
+
+.destination-short {
+    width: 340px;
+    height: auto;
+    padding: 60px 30px;
+    background-color: rgb(221, 220, 220);
+    box-shadow: 1px 5px 20px #9a9a9a;
+    font-size: 16px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    text-align: left;
+}
+
+.destination-short h3 {
+    font-family: Comic Sans MS;
+    color: var(--textcolor-secondary);
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.destination-short button {
+    display: inline-block;
+    padding: 7px 12px;
+    background: none;
+    border: 2px solid purple;
+    color: purple;
+    transition: 0.15s ease;
+}
+
+.destination-short button:hover {
+    background: purple;
+    color: white;
+}
+
+.country-image {
+    position: absolute;
+    left: 100px;
+    top: 25px
+}
+@media only screen and (max-width: 399px){
+    .header-section {
+        padding: 10px !important;
+    }
+
+    .drop-down-body button {
+        width: 80%;
+        padding: 0.6rem 0;
+    }
+
+    .select-menu {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .destination-image-section .location-image {
+        width: 340px;
+        max-height: 300px;
+    }
+
+    .country-image {
+        position: absolute;
+        width: 100px;
+        top: 190px;
+        left: 250px;
+    }
+
+    .destination-short {
+        width: auto;
+        height: auto;
+        padding: 40px 20px;
+        background-color: var(--background-primary);
+        box-shadow: none;
+        font-size: 16px;
+        position: unset;
+        text-align: justify;
+        color: var(--textcolor-primary);
+        margin-top: 50px;
+    }
+
+    .destination-short h3 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .header-section {
+        padding: 10px !important;
+    }
+
+    .drop-down-body button {
+        width: 80%;
+        padding: 0.6rem 0;
+    }
+
+    .select-menu {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .destination-image-section .location-image {
+        width: 395px;
+        max-height: 300px;
+    }
+
+    .country-image {
+        position: absolute;
+        width: 100px;
+        top: 200px;
+        left: 290px;
+    }
+
+    .destination-short {
+        width: auto;
+        height: auto;
+        padding: 40px 20px;
+        background-color: var(--background-primary);
+        box-shadow: none;
+        font-size: 16px;
+        position: unset;
+        text-align: justify;
+        color: var(--textcolor-primary);
+        margin-top: 50px;
+    }
+
+    .destination-short h3 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .drop-down-body button {
+        width: 80%;
+        padding: 0.6rem 0;
+    }
+
+    .select-menu {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .destination-image-section .location-image {
+        width: 700px;
+        max-height: 400px;
+    }
+        .country-image {
+        position: absolute;
+        width: 120px;
+        top: 5px;
+        left: -40px;
+    }
+    .destination-short {
+        width: auto;
+        height: auto;
+        padding: 10px 10px;
+        background-color: var(--background-primary);
+        box-shadow: none;
+        font-size: 16px;
+        position: unset;
+        text-align: justify;
+        color: var(--textcolor-primary);
+        margin-top: 50px;
+    }
+}

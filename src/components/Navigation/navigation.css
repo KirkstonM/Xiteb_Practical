@@ -1,0 +1,218 @@
+/* top navbar */
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1rem 0;
+    background-color: var(--background-primary);
+    color: var(--textcolor-primary);
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3rem;
+}
+
+.nav-options {
+    display: flex;
+    padding: 1rem 0;
+    width: 42rem;
+    justify-content: space-around;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: var(--textcolor-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: Montserrat, Verdana, Helvetica, Arial, sans-serif;
+}
+
+.divider-nav {
+    height: auto;
+    background: var(--textcolor-primary);
+    width: 0.01rem;
+}
+
+.mode-toggle {
+    cursor: pointer;
+}
+
+.bottom {
+    width: 100%;
+    background: black;
+    height: 10px;
+}
+
+.menu-toggle-btn {
+    display: none;
+}
+
+.compartment {
+    text-align: center;
+    display: block;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 0.1rem;
+    background: var(--textcolor-secondary);
+}
+
+.compartment a {
+    text-decoration: none;
+    color: black;
+}
+
+/**************************  BOTTOM NAV   ************************************/
+.nav-tabs {
+    padding: 0.5rem 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ccc;
+}
+
+.link-heading {
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.link-heading:hover {
+    color: goldenrod;
+}
+
+.custom-header {
+    font-family: Comic Sans MS;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: var(--textcolor-ternery);
+    font-weight: 500;
+}
+
+.nav-a:hover {
+    color: goldenrod;
+}
+
+.eventsNav {
+    position: absolute;
+    background-color: var(--background-primary);
+    color: var(--textcolor-primary);
+    min-width: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    top: 6rem;
+}
+
+.home:hover .eventsNav {
+    display: block;
+}
+
+.menu-divider {
+    width: 100%;
+    background: gainsboro;
+    height: 0.1rem;
+    margin: 0.5rem 0;
+}
+
+.menu {
+    margin-left: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu:hover {
+    color: goldenrod;
+}
+
+@media only screen and (max-width: 390px) {
+    .nav-options {
+        display: none;
+    }
+
+    .top-nav {
+        justify-content: space-between;
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .compartment {
+        text-align: left;
+        text-transform: uppercase;
+        margin-left: -1rem;
+        margin-top: -0.1rem;
+        border-radius: 0;
+        background: var(--textcolor-secondary);
+    }
+
+}
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .nav-options {
+        display: none;
+    }
+
+    .top-nav {
+        justify-content: space-between;
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .compartment {
+        text-align: left;
+        text-transform: uppercase;
+        margin-left: -1rem;
+        margin-top: -0.1rem;
+        border-radius: 0;
+        background: var(--textcolor-secondary);
+    }
+
+}
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .nav-options {
+        display: none;
+    }
+
+    .top-nav {
+        justify-content: space-between;
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .compartment {
+        text-align: left;
+        text-transform: uppercase;
+        margin-left: -1rem;
+        margin-top: -0.1rem;
+        border-radius: 0;
+        background: var(--textcolor-secondary);
+    }
+
+}

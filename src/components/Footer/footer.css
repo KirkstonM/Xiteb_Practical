@@ -1,0 +1,125 @@
+.col-header {
+    margin-bottom: 1rem;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    margin: 1rem 0;
+    color: var(--textcolor-ternery);
+}
+
+.col-header {
+    color: var(--textcolor-secondary);
+    font-family: Comic Sans MS !important;
+    font-size: xx-large;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+    color: var(--textcolor-ternery);
+    font-size: 1.4rem;
+    padding: 0.2rem;
+}
+
+.social-links a {
+    color: var(--textcolor-ternery);
+}
+
+.email-form input {
+    padding: 0.6rem 9rem 0.6rem 0.9rem;
+    background: var(--background-primary);
+    border: 1px solid grey;
+    color: var(--textcolor-primary);
+}
+
+.email-form button {
+    padding: 0.1rem 1.5rem;
+    background: none;
+    border: 1px solid rgb(94, 150, 10);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: green;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.terms input {
+    margin-top: -5rem;
+}
+
+.terms p {
+    margin-left: 1rem;
+    color: var(--textcolor-ternery);
+}
+
+footer {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.footer-bg {
+    position: absolute;
+    background: url('../../assets/images/footer_component/footer-bg-upper.png') top center no-repeat;
+    height: 100px;
+    width: 100%;
+    top: -90px;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.footer-bg.dark {
+    display: none;
+}
+
+.scroll-icon {
+    float: right;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+    right: 120px;
+    top: -100px;
+    background: linear-gradient(135deg, rgb(206, 159, 252) 10%, rgb(115, 103, 240) 100%);
+}
+
+.scroll-icon a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: "BodoniStd-BookItalic", serif;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .scroll-icon {
+        width: 100px;
+        height: 100px;
+        right: 120px;
+        top: -100px;
+        right: 30px;
+    }
+
+    .scroll-icon a {
+        font-size: 1.2rem;
+    }
+    .col-header, .links, .social-links{
+        margin-left: 3rem;
+    }
+    .email-form button{
+        margin-left: -0.1rem;
+        width: 4rem;
+    }
+}

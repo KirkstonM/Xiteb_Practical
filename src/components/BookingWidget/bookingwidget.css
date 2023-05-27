@@ -1,0 +1,109 @@
+.booking-tab {
+    padding: 0.5rem;
+    background-color: rgba(196, 194, 194, 0.568);
+    position: absolute;
+    right: 20rem;
+    left: 20rem;
+    bottom: 15rem;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-picker-tab,
+.room-booking-tab,
+.code-tab {
+    width: 100%;
+    padding: 0.9rem 0.9rem;
+    margin: 0 1rem;
+    background: whitesmoke;
+}
+
+.date-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 130px;
+}
+
+.date-control:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+}
+
+.room-booking-popup {
+    border-radius: 0.3rem;
+    max-width: 25rem;
+    padding: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 48rem;
+    bottom: 3rem;
+    z-index: 23;
+    background-color: white;
+    display: block;
+}
+
+.room-booking-popup.hide {
+    display: none;
+}
+
+.room-booking-popup h5 {
+    padding: 0.4rem 0;
+}
+
+.people {
+    background: rgba(228, 228, 228, 0.705);
+    padding-left: 9rem;
+    float: right;
+    width: 100%;
+    height: auto;
+}
+
+.bookings {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.counter button {
+    padding: 0 0.6rem;
+    margin: 0 0.2rem 0 0.2rem;
+    background: rgba(128, 128, 128, 0.308);
+    border: none;
+}
+
+.divider {
+    width: 100%;
+    height: 0.1rem;
+    background: rgba(128, 128, 128, 0.308);
+    margin-top: 1rem;
+}
+
+.addroom-btn {
+    width: 100%;
+    margin-top: 1.2rem;
+    border: 1px solid rgb(182, 158, 23);
+    padding: 0.5rem 0;
+    color: rgb(182, 158, 23);
+}
+
+.room-booking-tab {
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+    .booking-tab {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+    .booking-tab {
+        display: none;
+    }
+}
+

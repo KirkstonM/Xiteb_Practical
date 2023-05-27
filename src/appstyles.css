@@ -1,0 +1,13 @@
+#dark {
+    --background-primary: #121212;
+    --textcolor-primary: #fff;
+    --textcolor-secondary: #0059b2;
+    --textcolor-ternery : rgb(110, 110, 110);
+}
+
+#light {
+    --background-primary: #fff;
+    --textcolor-primary: #000;
+    --textcolor-secondary: #0059b2;
+    --textcolor-ternery : rgb(77, 77, 77);
+}
